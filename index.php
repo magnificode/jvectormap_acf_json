@@ -23,7 +23,7 @@ if( get_field('map_points') ){while( has_sub_field('map_points') ){
 
     $cur_dir = str_replace($DOCUMENT_ROOT, "", dirname($PHP_SELF)); 
 
-    $fp = fopen(get_theme_root() . "/millerortho/js/markers.json", "w");
+    $fp = fopen(get_theme_root() . "/js/markers.json", "w");
     fwrite($fp, $json);
     fclose($fp);
 }

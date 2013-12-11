@@ -5,7 +5,7 @@ $(document).ready(function () {
     var $loc = window.location.pathname;
     var $orig = window.location.origin;
     var $locorig = $orig + $loc;
-    $.getJSON($locorig + 'wp-content/themes/millerortho/js/markers.json', function(data){
+    $.getJSON($locorig + 'js/markers.json', function(data){
         $('#world-map').vectorMap({
             map: 'world_mill_en',
             backgroundColor: '#fff',
